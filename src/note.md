@@ -16,17 +16,18 @@
 
 ### Todo
 
-- [x] opening
-- [x] closure
-- [x] useState
-- [x] React 가내수공업 (by Shawn Wang)
-- [x] useState multi
-- [x] useEffect
+- [ ] opening
+- [ ] closure
+- [ ] useState
+- [ ] React 가내수공업 (by Shawn Wang)
+- [ ] useState multi
+- [ ] useEffect
 - [ ] DOM rendering
 - [ ] Custom hooks
 - [ ] Ending
 
 ### Reference
 
-- [Getting Closure on React Hooks by Shawn Wang](https://www.youtube.com/watch?v=KJP1E-Y-xyo)
+- [Getting Closure on React Hooks by Shawn
+  Wang](https://www.youtube.com/watch?v=KJP1E-Y- yo)
 - [React Today and Tomorrow and 90% Cleaner React With Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM&t=4319s)
