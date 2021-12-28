@@ -16,7 +16,12 @@ const React = (function () {
     const state = hooks[idx] || initVal
     const _idx = idx
     const setState = newVal => {
-      hooks[_idx] = newVal
+      if (typeof newVal === 'function') {
+        hooks[_idx] = newVal(state)
+        console.log(hooks[_idx])
+      } else {
+        hooks[_idx] = newVal
+      }
     }
     idx++
 
@@ -65,7 +70,8 @@ function Component() {
       <h1>
         This is <i>NOT</i> React!!
       </h1>
-      <button onClick={() => setCount(count + 1)}>Click Me!! : {count}</button>
+      {/* <button onClick={() => setCount(count + 1)}>Click Me!! : {count}</button> */}
+      <button onClick={() => setCount(c => c + 2)}>Click Me!! : {count}</button>
       {list.map(item => (
         <img src={item} />
       ))}
