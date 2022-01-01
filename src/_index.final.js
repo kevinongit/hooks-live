@@ -78,6 +78,7 @@ function Component() {
       </h1>
       {/* <button onClick={() => setCount(count + 1)}>Click Me!! : {count}</button> */}
       <button onClick={() => setCount(c => c + 1)}>Click Me!! : {count}</button>
+      <h3> Fetched Image : {list.length}</h3>
       {list.map(item => (
         <img src={item} />
       ))}
