@@ -52,18 +52,24 @@ const React = (function () {
   return {useState, useEffect, render: render(hooks), createElement}
 })()
 
-function useDogs(count) {
+function useFaces(count) {
   const [list, setList] = React.useState([])
 
   React.useEffect(() => {
-    fetchApi(count).then(data => setList(data))
+    // fetchApi(count).then(data => setList(data))
+    fetch(`http://localhost:8080/api/faces/${count}`)
+      .then(resp => resp.json())
+      .then(data => {
+        // console.log(data)
+        setList(data)
+      })
   }, [count])
   return list
 }
 
 function Component() {
   const [count, setCount] = React.useState(0)
-  const list = useDogs(count)
+  const list = useFaces(count)
 
   return (
     <main>
@@ -71,7 +77,7 @@ function Component() {
         This is <i>NOT</i> React!!
       </h1>
       {/* <button onClick={() => setCount(count + 1)}>Click Me!! : {count}</button> */}
-      <button onClick={() => setCount(c => c + 2)}>Click Me!! : {count}</button>
+      <button onClick={() => setCount(c => c + 1)}>Click Me!! : {count}</button>
       {list.map(item => (
         <img src={item} />
       ))}

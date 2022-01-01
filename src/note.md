@@ -3,23 +3,22 @@
 [Closure] makes it possible for a function to have “private” variables”
 -W3Schools
 
-### 사전 준비 (Optional)
+### Prerequisite (Optional)
 
 - js and js closure
 - react 및 react hooks
 
 ### When & Where
 
-- 2022.01.07 (Fri) 17:00 ~ 18:00
-  - 참석자에 따라 시간 조정은 가능
-- 장소 : 본사 회의실
+- 2022.01.10 (Mon) 16:00 ~ 18:00
+- 장소 : 본사 빈 회의실
 
 ### Todo
 
 - [ ] opening
 - [ ] closure
 - [ ] useState
-- [ ] React 가내수공업 (by Shawn Wang)
+- [ ] React naive
 - [ ] useState multi
 - [ ] useEffect
 - [ ] DOM rendering
@@ -28,6 +27,5 @@
 
 ### Reference
 
-- [Getting Closure on React Hooks by Shawn
-  Wang](https://www.youtube.com/watch?v=KJP1E-Y- yo)
+- [Getting Closure on React Hooks by Shawn Wang](https://www.youtube.com/watch?v=KJP1E-Y-xyo&t=1s)
 - [React Today and Tomorrow and 90% Cleaner React With Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM&t=4319s)
