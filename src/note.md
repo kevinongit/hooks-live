@@ -25,6 +25,12 @@
 - [ ] Custom hooks
 - [ ] Ending
 
+### Demo source
+
+- [client : hooks-live](https://github.com/kevinongit/hooks-live)
+- [server : hooks-server](https://github.com/kevinongit/hooks-server)
+- api url : http://localhost:8080/api/faces/
+
 ### Reference
 
 - [Getting Closure on React Hooks by Shawn Wang](https://www.youtube.com/watch?v=KJP1E-Y-xyo&t=1s)
